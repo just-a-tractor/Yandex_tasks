@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+{% if ans == '0' %}
+        <h1>НЕУДАЧА</h1>
+        <form action="" method="post" novalidate>
+</form>
+    {% elif ans == '1' %}
+        <h1>{{login1}}, вы ввели неверный пароль</h1>
+        <form action="" method="post" novalidate>
+        </form>
+    {% elif ans == '2' %}
+        <h1>Здарова, {{login1}}</h1>
+        <form action="" method="post" novalidate>
+        </form>
+    {% endif %}
+
+{% endblock %}
+
