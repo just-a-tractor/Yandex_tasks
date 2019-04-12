@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Вэб-преложэние</title>
+</head>
+<body>
+<form method="post">
+<p><strong>Введите два целых числа</strong></p>
+<p><input type="number" name="number1"</p>
+<p><input type="number" name="number2"</p>
+<br style="text-align: center"><button>Отправить</button>
+</form>
+ {% if number2 != 0 and number1 and number2%}
+
+ {% if number1 % number2 == 0 %}
+    <div>{{number1}} делится на {{number2}} без остатка.</div>
+  {% else %}
+       <div>{{number1}} НЕ делится на {{number2}} без остатка.</div>
+  {% endif %}
+ {% else %}
+       <div>Неверные данные.</div>
+  {% endif %}
+</body>
+</html>
