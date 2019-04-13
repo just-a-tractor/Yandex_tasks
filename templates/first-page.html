@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+
+ {% block content %}
+  <form method="post">
+  <p><strong>Прогноз погоды на:</strong></p>
+
+  <p><select name="time">
+      <option disabled>Выберите время</option>
+      <option value="day">День</option>
+      <option value="three_days">Три дня</option>
+      <option value="week">Неделя</option>
+      <option value="month">Месяц</option>
+     </select></p>
+
+  <br style="text-align: center"><button>Отправить</button>
+
+  </form>
+ {% endblock %}

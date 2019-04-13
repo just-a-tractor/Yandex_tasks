@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+
+ {% block content %}
+
+    {% for i in krs %}
+      {% if i != ' ' %}
+        <div> {{ i }} </div>
+      {% else %}
+        <br>
+      {% endif %}
+    {% endfor %}
+
+ {% endblock %}}

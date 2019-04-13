@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+
+ {% block content %}
+
+  <div>{{ date }}</div>
+  <div>{{ tem }}</div>
+  <br>
+  {% for i in pod %}
+    <p>
+    <div>{{i}}</div>
+    </p>
+  {% endfor %}
+
+ {% endblock %}

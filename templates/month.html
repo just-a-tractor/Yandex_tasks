@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+
+ {% block content %}
+	
+	<caption>Прогноз погоды на месяц</caption>
+    <table border="1">
+   <tr>
+    <th>Дата</th>
+    <th>Температура</th>
+   </tr>
+   {% for i, j in tab %}
+   <tr><td>{{ i }}</td><td>{{ j }}</td></tr>
+	{% endfor %}
+  </table>
+
+
+ {% endblock %}
